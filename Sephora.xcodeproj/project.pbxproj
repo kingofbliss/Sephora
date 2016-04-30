@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B91D4361CD080F50021A049 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91D4351CD080F50021A049 /* Product.swift */; };
+		0B91D4381CD08C680021A049 /* SDWebServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91D4371CD08C680021A049 /* SDWebServiceLayer.swift */; };
+		0B91D43A1CD08D9B0021A049 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91D4391CD08D9B0021A049 /* ProductListViewController.swift */; };
+		0B91D4401CD0A1DE0021A049 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91D43F1CD0A1DE0021A049 /* ProductDetailViewController.swift */; };
+		589350BD1CD071FD003E18C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589350BC1CD071FD003E18C3 /* AppDelegate.swift */; };
+		589350BF1CD071FD003E18C3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589350BE1CD071FD003E18C3 /* CategoryViewController.swift */; };
+		589350C11CD071FD003E18C3 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589350C01CD071FD003E18C3 /* ScanViewController.swift */; };
+		589350C41CD071FD003E18C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589350C21CD071FD003E18C3 /* Main.storyboard */; };
+		589350C61CD071FD003E18C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589350C51CD071FD003E18C3 /* Assets.xcassets */; };
+		589350C91CD071FD003E18C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589350C71CD071FD003E18C3 /* LaunchScreen.storyboard */; };
+		589350D41CD071FD003E18C3 /* SephoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589350D31CD071FD003E18C3 /* SephoraTests.swift */; };
+		589350DF1CD071FD003E18C3 /* SephoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589350DE1CD071FD003E18C3 /* SephoraUITests.swift */; };
+		589350ED1CD07458003E18C3 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589350EC1CD07458003E18C3 /* CartViewController.swift */; };
+		58F165E61CD2F0010063CCD0 /* SDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F165E51CD2F0010063CCD0 /* SDConstants.swift */; };
+		58F165EE1CD3520B0063CCD0 /* SDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F165ED1CD3520B0063CCD0 /* SDUtils.swift */; };
+		733C4D298E79DEFECF1B82AA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB5B1D7A989BB32BE953B16 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		589350D01CD071FD003E18C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589350B11CD071FD003E18C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589350B81CD071FD003E18C3;
+			remoteInfo = Sephora;
+		};
+		589350DB1CD071FD003E18C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589350B11CD071FD003E18C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589350B81CD071FD003E18C3;
+			remoteInfo = Sephora;
+		};
+		589350FC1CD0F046003E18C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589350F41CD0F045003E18C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35B299B4F32E77529EF1243272015C99;
+			remoteInfo = Alamofire;
+		};
+		589350FE1CD0F046003E18C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589350F41CD0F045003E18C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18E3AFE9807366D146FCE3C6A2EA85E5;
+			remoteInfo = Pods;
+		};
+		589351001CD0F046003E18C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589350F41CD0F045003E18C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEC813FD106FA003968F7411D8C19C6D;
+			remoteInfo = "Pods-Sephora";
+		};
+		589351021CD0F046003E18C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589350F41CD0F045003E18C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A2DC4FDD521BAE6811D816E6A0B0598;
+			remoteInfo = "Pods-SephoraTests";
+		};
+		589351041CD0F046003E18C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589350F41CD0F045003E18C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18528059395485D2A2995C3245AA83C2;
+			remoteInfo = "Pods-SephoraUITests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B91D4351CD080F50021A049 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0B91D4371CD08C680021A049 /* SDWebServiceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDWebServiceLayer.swift; sourceTree = "<group>"; };
+		0B91D4391CD08D9B0021A049 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		0B91D43F1CD0A1DE0021A049 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		589350B91CD071FD003E18C3 /* Sephora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sephora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		589350BC1CD071FD003E18C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		589350BE1CD071FD003E18C3 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		589350C01CD071FD003E18C3 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		589350C31CD071FD003E18C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		589350C51CD071FD003E18C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		589350C81CD071FD003E18C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		589350CA1CD071FD003E18C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589350CF1CD071FD003E18C3 /* SephoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SephoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		589350D31CD071FD003E18C3 /* SephoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SephoraTests.swift; sourceTree = "<group>"; };
+		589350D51CD071FD003E18C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589350DA1CD071FD003E18C3 /* SephoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SephoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		589350DE1CD071FD003E18C3 /* SephoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SephoraUITests.swift; sourceTree = "<group>"; };
+		589350E01CD071FD003E18C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589350EC1CD07458003E18C3 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		589350F41CD0F045003E18C3 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		58F165E51CD2F0010063CCD0 /* SDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDConstants.swift; sourceTree = "<group>"; };
+		58F165ED1CD3520B0063CCD0 /* SDUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDUtils.swift; sourceTree = "<group>"; };
+		79136E6B3631E09F1B7B5057 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		ADB5B1D7A989BB32BE953B16 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A31D29C5DD7C845A27E6BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		589350B61CD071FD003E18C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733C4D298E79DEFECF1B82AA /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589350CC1CD071FD003E18C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589350D71CD071FD003E18C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A8034368071E954F1FA720A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				589350F41CD0F045003E18C3 /* Pods.xcodeproj */,
+				79136E6B3631E09F1B7B5057 /* Pods.debug.xcconfig */,
+				B1A31D29C5DD7C845A27E6BA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		589350B01CD071FD003E18C3 = {
+			isa = PBXGroup;
+			children = (
+				589350BB1CD071FD003E18C3 /* Sephora */,
+				589350D21CD071FD003E18C3 /* SephoraTests */,
+				589350DD1CD071FD003E18C3 /* SephoraUITests */,
+				589350BA1CD071FD003E18C3 /* Products */,
+				0A8034368071E954F1FA720A /* Pods */,
+				7E74945017665FF560617D41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		589350BA1CD071FD003E18C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				589350B91CD071FD003E18C3 /* Sephora.app */,
+				589350CF1CD071FD003E18C3 /* SephoraTests.xctest */,
+				589350DA1CD071FD003E18C3 /* SephoraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		589350BB1CD071FD003E18C3 /* Sephora */ = {
+			isa = PBXGroup;
+			children = (
+				58F165F31CD361080063CCD0 /* Modal */,
+				58F165F41CD361100063CCD0 /* Utils */,
+				58F165EF1CD358FF0063CCD0 /* ViewController */,
+				589350C21CD071FD003E18C3 /* Main.storyboard */,
+				589350C51CD071FD003E18C3 /* Assets.xcassets */,
+				589350C71CD071FD003E18C3 /* LaunchScreen.storyboard */,
+				589350CA1CD071FD003E18C3 /* Info.plist */,
+			);
+			path = Sephora;
+			sourceTree = "<group>";
+		};
+		589350D21CD071FD003E18C3 /* SephoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				589350D31CD071FD003E18C3 /* SephoraTests.swift */,
+				589350D51CD071FD003E18C3 /* Info.plist */,
+			);
+			path = SephoraTests;
+			sourceTree = "<group>";
+		};
+		589350DD1CD071FD003E18C3 /* SephoraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				589350DE1CD071FD003E18C3 /* SephoraUITests.swift */,
+				589350E01CD071FD003E18C3 /* Info.plist */,
+			);
+			path = SephoraUITests;
+			sourceTree = "<group>";
+		};
+		589350F51CD0F045003E18C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				589350FD1CD0F046003E18C3 /* Alamofire.framework */,
+				589350FF1CD0F046003E18C3 /* Pods.framework */,
+				589351011CD0F046003E18C3 /* Pods_Sephora.framework */,
+				589351031CD0F046003E18C3 /* Pods_SephoraTests.framework */,
+				589351051CD0F046003E18C3 /* Pods_SephoraUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58F165EF1CD358FF0063CCD0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58F165F01CD3590F0063CCD0 /* Products */,
+				58F165F11CD3591A0063CCD0 /* Scan */,
+				58F165F21CD359220063CCD0 /* My Cart */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		58F165F01CD3590F0063CCD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				589350BE1CD071FD003E18C3 /* CategoryViewController.swift */,
+				0B91D4391CD08D9B0021A049 /* ProductListViewController.swift */,
+				0B91D43F1CD0A1DE0021A049 /* ProductDetailViewController.swift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58F165F11CD3591A0063CCD0 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				589350C01CD071FD003E18C3 /* ScanViewController.swift */,
+			);
+			name = Scan;
+			sourceTree = "<group>";
+		};
+		58F165F21CD359220063CCD0 /* My Cart */ = {
+			isa = PBXGroup;
+			children = (
+				589350EC1CD07458003E18C3 /* CartViewController.swift */,
+			);
+			name = "My Cart";
+			sourceTree = "<group>";
+		};
+		58F165F31CD361080063CCD0 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				0B91D4351CD080F50021A049 /* Product.swift */,
+				0B91D4371CD08C680021A049 /* SDWebServiceLayer.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		58F165F41CD361100063CCD0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				589350BC1CD071FD003E18C3 /* AppDelegate.swift */,
+				58F165E51CD2F0010063CCD0 /* SDConstants.swift */,
+				58F165ED1CD3520B0063CCD0 /* SDUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		7E74945017665FF560617D41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADB5B1D7A989BB32BE953B16 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		589350B81CD071FD003E18C3 /* Sephora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589350E31CD071FD003E18C3 /* Build configuration list for PBXNativeTarget "Sephora" */;
+			buildPhases = (
+				7D9EF165FDB5E2C1284E8767 /* Check Pods Manifest.lock */,
+				589350B51CD071FD003E18C3 /* Sources */,
+				589350B61CD071FD003E18C3 /* Frameworks */,
+				589350B71CD071FD003E18C3 /* Resources */,
+				2DBD4082DAF8624DC2EAB51C /* Embed Pods Frameworks */,
+				E669D39535AD82A00310E9BB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sephora;
+			productName = Sephora;
+			productReference = 589350B91CD071FD003E18C3 /* Sephora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		589350CE1CD071FD003E18C3 /* SephoraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589350E61CD071FD003E18C3 /* Build configuration list for PBXNativeTarget "SephoraTests" */;
+			buildPhases = (
+				589350CB1CD071FD003E18C3 /* Sources */,
+				589350CC1CD071FD003E18C3 /* Frameworks */,
+				589350CD1CD071FD003E18C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				589350D11CD071FD003E18C3 /* PBXTargetDependency */,
+			);
+			name = SephoraTests;
+			productName = SephoraTests;
+			productReference = 589350CF1CD071FD003E18C3 /* SephoraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		589350D91CD071FD003E18C3 /* SephoraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589350E91CD071FD003E18C3 /* Build configuration list for PBXNativeTarget "SephoraUITests" */;
+			buildPhases = (
+				589350D61CD071FD003E18C3 /* Sources */,
+				589350D71CD071FD003E18C3 /* Frameworks */,
+				589350D81CD071FD003E18C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				589350DC1CD071FD003E18C3 /* PBXTargetDependency */,
+			);
+			name = SephoraUITests;
+			productName = SephoraUITests;
+			productReference = 589350DA1CD071FD003E18C3 /* SephoraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		589350B11CD071FD003E18C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Anand Raj R";
+				TargetAttributes = {
+					589350B81CD071FD003E18C3 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					589350CE1CD071FD003E18C3 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 589350B81CD071FD003E18C3;
+					};
+					589350D91CD071FD003E18C3 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 589350B81CD071FD003E18C3;
+					};
+				};
+			};
+			buildConfigurationList = 589350B41CD071FD003E18C3 /* Build configuration list for PBXProject "Sephora" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 589350B01CD071FD003E18C3;
+			productRefGroup = 589350BA1CD071FD003E18C3 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 589350F51CD0F045003E18C3 /* Products */;
+					ProjectRef = 589350F41CD0F045003E18C3 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				589350B81CD071FD003E18C3 /* Sephora */,
+				589350CE1CD071FD003E18C3 /* SephoraTests */,
+				589350D91CD071FD003E18C3 /* SephoraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		589350FD1CD0F046003E18C3 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 589350FC1CD0F046003E18C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		589350FF1CD0F046003E18C3 /* Pods.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods.framework;
+			remoteRef = 589350FE1CD0F046003E18C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		589351011CD0F046003E18C3 /* Pods_Sephora.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Sephora.framework;
+			remoteRef = 589351001CD0F046003E18C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		589351031CD0F046003E18C3 /* Pods_SephoraTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_SephoraTests.framework;
+			remoteRef = 589351021CD0F046003E18C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		589351051CD0F046003E18C3 /* Pods_SephoraUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_SephoraUITests.framework;
+			remoteRef = 589351041CD0F046003E18C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		589350B71CD071FD003E18C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589350C91CD071FD003E18C3 /* LaunchScreen.storyboard in Resources */,
+				589350C61CD071FD003E18C3 /* Assets.xcassets in Resources */,
+				589350C41CD071FD003E18C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589350CD1CD071FD003E18C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589350D81CD071FD003E18C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DBD4082DAF8624DC2EAB51C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D9EF165FDB5E2C1284E8767 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E669D39535AD82A00310E9BB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		589350B51CD071FD003E18C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589350ED1CD07458003E18C3 /* CartViewController.swift in Sources */,
+				589350C11CD071FD003E18C3 /* ScanViewController.swift in Sources */,
+				0B91D43A1CD08D9B0021A049 /* ProductListViewController.swift in Sources */,
+				0B91D4361CD080F50021A049 /* Product.swift in Sources */,
+				589350BD1CD071FD003E18C3 /* AppDelegate.swift in Sources */,
+				0B91D4401CD0A1DE0021A049 /* ProductDetailViewController.swift in Sources */,
+				58F165EE1CD3520B0063CCD0 /* SDUtils.swift in Sources */,
+				0B91D4381CD08C680021A049 /* SDWebServiceLayer.swift in Sources */,
+				589350BF1CD071FD003E18C3 /* CategoryViewController.swift in Sources */,
+				58F165E61CD2F0010063CCD0 /* SDConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589350CB1CD071FD003E18C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589350D41CD071FD003E18C3 /* SephoraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589350D61CD071FD003E18C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589350DF1CD071FD003E18C3 /* SephoraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		589350D11CD071FD003E18C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 589350B81CD071FD003E18C3 /* Sephora */;
+			targetProxy = 589350D01CD071FD003E18C3 /* PBXContainerItemProxy */;
+		};
+		589350DC1CD071FD003E18C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 589350B81CD071FD003E18C3 /* Sephora */;
+			targetProxy = 589350DB1CD071FD003E18C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		589350C21CD071FD003E18C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589350C31CD071FD003E18C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		589350C71CD071FD003E18C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589350C81CD071FD003E18C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		589350E11CD071FD003E18C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		589350E21CD071FD003E18C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		589350E41CD071FD003E18C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79136E6B3631E09F1B7B5057 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anand Raj R (B22A6692Z5)";
+				INFOPLIST_FILE = Sephora/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anand.Sephora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		589350E51CD071FD003E18C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A31D29C5DD7C845A27E6BA /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anand Raj R (B22A6692Z5)";
+				INFOPLIST_FILE = Sephora/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anand.Sephora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		589350E71CD071FD003E18C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SephoraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anand.SephoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sephora.app/Sephora";
+			};
+			name = Debug;
+		};
+		589350E81CD071FD003E18C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SephoraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anand.SephoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sephora.app/Sephora";
+			};
+			name = Release;
+		};
+		589350EA1CD071FD003E18C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SephoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anand.SephoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Sephora;
+			};
+			name = Debug;
+		};
+		589350EB1CD071FD003E18C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SephoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anand.SephoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Sephora;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		589350B41CD071FD003E18C3 /* Build configuration list for PBXProject "Sephora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589350E11CD071FD003E18C3 /* Debug */,
+				589350E21CD071FD003E18C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589350E31CD071FD003E18C3 /* Build configuration list for PBXNativeTarget "Sephora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589350E41CD071FD003E18C3 /* Debug */,
+				589350E51CD071FD003E18C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589350E61CD071FD003E18C3 /* Build configuration list for PBXNativeTarget "SephoraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589350E71CD071FD003E18C3 /* Debug */,
+				589350E81CD071FD003E18C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589350E91CD071FD003E18C3 /* Build configuration list for PBXNativeTarget "SephoraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589350EA1CD071FD003E18C3 /* Debug */,
+				589350EB1CD071FD003E18C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 589350B11CD071FD003E18C3 /* Project object */;
+}
