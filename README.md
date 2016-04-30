@@ -12,6 +12,7 @@ Features:
 - 3D touch the app icon for quick product scan
 
 Preview:
+
 ![alt tag](https://github.com/kingofbliss/Sephora/blob/master/demo.gif) 
 
 Sample QR:
