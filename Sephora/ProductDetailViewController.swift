@@ -34,7 +34,11 @@ class ProductDetailViewController: UIViewController{
     }
     
     @IBAction func onClickAddCartBtn(sender: UIButton?) {
-        CartViewController().addProductToCart()
+        if !(CartViewController().addProductToCart(self.product!))
+        {
+            //Show error alert
+            SDUtils().showAlert(self, message:"Product already in cart")
+        }
         SDUtils().changeTabBadge(self)
     }
     
@@ -90,7 +94,7 @@ class ProductDetailViewController: UIViewController{
     override func previewActionItems() -> [UIPreviewActionItem] {
         
         let addToCart = UIPreviewAction(title: "Add to cart", style: .Default) { (action, viewController) -> Void in
-            CartViewController().addProductToCart()
+           print("Add to cart")
         }
         return [addToCart]
     }

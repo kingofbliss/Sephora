@@ -11,6 +11,8 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    var productArray = [Product]()
+    
     enum ShortcutIdentifier: String {
         case scan
         

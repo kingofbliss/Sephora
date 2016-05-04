@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Category-->
@@ -339,7 +340,7 @@
         <!--My Cart-->
         <scene sceneID="rN0-2Q-F0P">
             <objects>
-                <viewController id="l7z-wg-x98" customClass="CartViewController" customModule="Sephora" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="l7z-wg-x98" customClass="CartViewController" customModule="Sephora" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0lX-DQ-InD"/>
                         <viewControllerLayoutGuide type="bottom" id="qRq-W8-cP1"/>
@@ -348,31 +349,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmm-XN-cv9">
-                                <rect key="frame" x="212" y="268" width="177" height="63"/>
-                                <color key="backgroundColor" red="0.85490196080000003" green="0.1450980392" blue="0.1529411765" alpha="0.79609929079999997" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="KPI-yR-bbP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Empty Cart">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gj6-JF-luD">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" textLabel="IlB-Nj-2XP" detailTextLabel="HJk-2f-b3v" imageView="41e-q3-lDB" style="IBUITableViewCellStyleSubtitle" id="gIp-Zq-Plr">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gIp-Zq-Plr" id="9OL-F9-ro3">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IlB-Nj-2XP">
+                                                    <rect key="frame" x="60" y="27" width="32" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HJk-2f-b3v">
+                                                    <rect key="frame" x="60" y="47" width="41" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="cart" id="41e-q3-lDB">
+                                                    <rect key="frame" x="15" y="28" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="emptyCart" destination="l7z-wg-x98" eventType="touchUpInside" id="I3K-pP-Pb6"/>
+                                    <outlet property="dataSource" destination="l7z-wg-x98" id="kTz-jB-fkH"/>
+                                    <outlet property="delegate" destination="l7z-wg-x98" id="FW0-Oc-pNV"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vmm-XN-cv9" firstAttribute="top" secondItem="0lX-DQ-InD" secondAttribute="bottom" constant="204" id="JWd-g1-tTA"/>
-                            <constraint firstItem="Vmm-XN-cv9" firstAttribute="centerY" secondItem="M6E-gi-B9p" secondAttribute="centerY" id="d0Q-Vb-BqM"/>
-                            <constraint firstItem="Vmm-XN-cv9" firstAttribute="centerX" secondItem="M6E-gi-B9p" secondAttribute="centerX" id="pPa-kW-tC7"/>
+                            <constraint firstItem="gj6-JF-luD" firstAttribute="leading" secondItem="M6E-gi-B9p" secondAttribute="leadingMargin" constant="-20" id="2gk-5Q-JO9"/>
+                            <constraint firstItem="qRq-W8-cP1" firstAttribute="top" secondItem="gj6-JF-luD" secondAttribute="bottom" id="Ist-80-ODW"/>
+                            <constraint firstItem="gj6-JF-luD" firstAttribute="top" secondItem="0lX-DQ-InD" secondAttribute="bottom" id="Z4I-EV-wf5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gj6-JF-luD" secondAttribute="trailing" constant="-20" id="lQx-H7-lQC"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Cart" image="first" id="Kqx-xm-q7y"/>
                     <navigationItem key="navigationItem" id="6eo-1V-l5v"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cartListView" destination="gj6-JF-luD" id="aeD-6U-eVH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZH-yK-5ME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
